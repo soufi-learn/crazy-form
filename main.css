@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* IMPORT INTERNAL FONT */
+@font-face {
+    font-family: vazir;
+    src: url('./Vazir.ttf') format('truetype');
+}
+
+body {
+    background: #444;
+    color: #fff;
+    font-family: vazir;
+}
+
+input,
+button {
+    font-family: vazir;
+
+}
+
+.container {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form-wrapper {
+    width: 400px;
+    background: #555;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.container .form-wrapper .login-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* INPUT */
+.container .form-wrapper .input-wrapper {
+    margin-bottom: 1rem;
+}
+
+.container .form-wrapper .input-wrapper .login-input {
+    width: 100%;
+    padding: .3rem .6rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: none;
+    background: #333;
+    color: #fff;
+    outline: none;
+}
+
+
+.container .form-wrapper .input-wrapper .login-input::placeholder {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* BUTTON */
+.container .form-wrapper .button-wrapper {
+    margin-top: 2rem;
+    margin-bottom: .3rem;
+}
+
+
+.container .form-wrapper .button-wrapper .submit-btn {
+    padding: .4rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    transition: all .3s;
+}
+
+/* disable button styles */
+.container .form-wrapper .button-wrapper .submit-btn.disable-btn {
+    background: #57aff7;
+    cursor: not-allowed;
+    color: #111;
+}
+
+/* active button styles */
+.container .form-wrapper .button-wrapper .submit-btn.active-btn {
+    background: #a2f450;
+    cursor: pointer;
+}
+
+/* FOOTER STYLES */
+.footer-container {
+    position: fixed;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+}
+
+.footer-container a {
+    color: #43edf3;
+}
